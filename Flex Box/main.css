@@ -1,0 +1,164 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+}
+
+.nav {
+    min-height: 50px;
+    background-color: #ef512e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+    padding-left: 0;
+    margin: auto 14px;
+}
+
+.nav-item{
+    color: #ffff;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+
+.form-container{
+    background-color: #ffff;
+    max-width: 720px;
+    margin: 36px auto;
+    padding: 32px;
+}
+
+/* mỗi một form row là một flex container */
+.form-row{
+    padding: 8px 0;
+    display: flex;
+}
+
+.form-input{
+    /* nếu có một item -> cố gắng chiếm hết trong flex container */
+    flex: 1;
+}
+
+.form-label{
+    min-width: 90px;
+}
+
+.column-layout{
+    background-color: #ffff;
+    display: flex;
+}
+
+.column-item{
+    padding: 0 8px;
+    /* nhiều thằng có flex: value thì tất cả item có kích thước bằng nhau */
+    /* flex: 1; */
+}
+
+/* có thể chỉnh sửa kích thước trong từng class riêng */
+.sidebar-one{
+    flex: 1
+}
+
+.sidebar-two{
+    flex: 1
+}
+
+.main-column{
+    flex: 2
+}
+
+.feature-layout{
+    margin-top: 36px;
+    display: flex;
+    /* mỗi thằng đều được cách đều như nhau */
+    justify-content: space-around;
+}
+
+.feature-item{
+    padding: 12px 36px;
+    margin-top: 16px;
+    flex-basis: 20%;
+}
+/* xét thằng con thứ 1 của item */
+.feature-item:nth-child(1){
+    background-color: #2eb2ef;
+}
+
+.feature-item:nth-child(2){
+    background-color: indianred;
+}
+
+.feature-item:nth-child(3){
+    background-color: yellowgreen;
+}
+
+.wrap-layout{
+    margin-top:36px;
+    background-color: #ffff;
+    padding: 12px 0 32px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrap-layout-item{
+    background-color: red;
+    width: 148px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.center-layout{
+    background-color: rgb(39, 233, 129);
+    width: 900px;
+    height: 300px;
+    margin: 32px auto;
+    padding: 32px 0;
+    display: flex;
+}
+
+.center-layout-item{
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.chart-layout{
+    margin: 36px auto;
+    height: 320px;
+    background-color: #ffff;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.chart-layout-item{
+    width: 60px;
+    height: var(--percent);
+    color: #ffff;
+    text-align: center;
+    background-color: #ef512e;
+    animation: growth ease-in 0.5s;
+}
+
+
+@keyframes growth{
+    from{
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+    to
+    {
+        opacity: 1;
+        height: var(--percent);
+    }
+}

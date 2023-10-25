@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="./assets/images/garage-band.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/fontawesome.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar-item first-item">
+                        <a href="#" class="navbar-item__link">HOME</a> 
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#band" class="navbar-item__link">BAND</a> 
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tour" class="navbar-item__link">TOUR</a> 
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-item__link">CONTACT</a> 
+                    </li>
+                    <li class="navbar-item navbar-item__submenu">
+                        <a href="#" class="navbar-item__link">
+                            MORE
+                            <i class="navbar__submenu-icon fa-solid fa-sort-down"></i>
+                        </a> 
+                        <ul class="navbar__submenu">
+                            <li class="navbar-subitem">
+                                <a href="#" class="navbar-subitem__link">Merchandise</a>
+                            </li>
+                            <li class="navbar-subitem">
+                                <a href="#" class="navbar-subitem__link">Extras</a>
+                            </li>
+                            <li class="navbar-subitem">
+                                <a href="#" class="navbar-subitem__link">Media</a>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar__search-btn hide-on-mobile">
+                    <i class="navbar__search-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+                <div id="mobile-menu" class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars navbar__mobile-icon"></i>
+                </div> 
+                
+            </nav>
+        </div>
+        <div class="slider">
+            <div class="text-content hide-on-mobile">
+                <h2 class="text-heading">New York</h2>
+                <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="band">
+                <div class="content">
+                    <h2 class="content__title text--wide-space">THE BAND</h2>
+                    <p class="content__slogan">We love music</p>
+                    <p class="content__description">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="row content-members">
+                        <div class="col l-4 m-4 c-12 content-members__info">
+                            <p class="content-members__name">Name</p>
+                            <img src="./assets/images/bandmember.jpg" alt="" class="content-members__img">
+                        </div>
+                        <div class="col l-4 m-4 c-12 content-members__info">
+                            <p class="content-members__name">Name</p>
+                            <img src="./assets/images/bandmember.jpg" alt="" class="content-members__img">
+                        </div>
+                        <div class="col l-4 m-4 c-12 content-members__info">
+                            <p class="content-members__name">Name</p>
+                            <img src="./assets/images/bandmember.jpg" alt="" class="content-members__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tour">
+                <div class="content">    
+                    <h2 class="content__title text--white-color text--wide-space">TOUR DATES</h2>
+                    <p class="content__slogan">Remembser to book your tickets!</p>
+                    <br>
+                    <ul class="tour-ticket">
+                        <li class="tour-ticket__info">
+                            September
+                            <span class="tour-ticket__status">Sold out</span>
+                        </li>
+                        <li class="tour-ticket__info">
+                            October
+                            <span class="tour-ticket__status">Sold out</span>
+                        </li>
+                        <li class="tour-ticket__info">
+                            November
+                            <span class="tour-ticket__status tour-ticket__status--stock">3</span>
+                        </li>
+                    </ul>
+
+                    <div class="row tour-ticket__detail">
+                        <div class="col l-4 m-4 c-12 tour-ticket__detail-info">
+                            <img src="./assets/images/newyork.jpg" alt="" class="tour-ticket__image">
+                            <div class="tour-ticket__content">
+                                <h2 class="content__title">New York</h2>
+                                <p class="content__slogan">Fri 27 Nov 2016</p>
+                                <p class="content__description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a class="tour-ticket__button">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12 tour-ticket__detail-info">
+                            <img src="./assets/images/paris.jpg" alt="" class="tour-ticket__image">
+                            <div class="tour-ticket__content">
+                                <h2 class="content__title">Paris</h2>
+                                <p class="content__slogan">Sat 28 Nov 2016</p>
+                                <p class="content__description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a class="tour-ticket__button">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12 tour-ticket__detail-info">
+                            <img src="./assets/images/sanfran.jpg" alt="" class="tour-ticket__image">
+                            <div class="tour-ticket__content">
+                                <h2 class="content__title">San Francisco</h2>
+                                <p class="content__slogan">Sun 29 Nov 2016</p>
+                                <p class="content__description">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <a class="tour-ticket__button">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="content">
+                    <h2 class="content__title text--wide-space">CONTACT</h2>
+                    <p class="content__slogan">Fan?Drop a note!</p>
+                    <div class="row contact__wrapper">
+                        <div class="col l-6 m-6 c-12">
+                            <ul class="contact__list">
+                                <li class="row contact-item">
+                                    <i class="contact-item__icon fa-solid fa-location-dot"></i>
+                                    Chicago, US
+                                </li>
+                                <li class="row contact-item">
+                                    <i class="contact-item__icon fa-solid fa-phone"></i>
+                                    Phone: <a href="tel:+00 151515" style="padding-left: 5px;">+00 151515</a>
+                                </li>
+                                <li class="row contact-item">
+                                    <i class="contact-item__icon fa-solid fa-envelope"></i>
+                                    Email: <a href="mailto:mail@mail.com" style="padding-left: 5px;">mail@mail.com</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <form class="contact__note-info" action="">
+                                <div class="row" style="margin-bottom: 8px">
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="text" class="contact__note-input" placeholder="Name">
+
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="text" class="contact__note-input" placeholder="Email">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        
+                                        <input type="text" class="contact__note-input" placeholder="Message">
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col c-12">
+                                        <button class="contact__button">SEND</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/images/map.jpg" alt="" class="map-img">
+        </div>
+        <div class="footer">
+            <div class="social-lists">
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-square-snapchat"></i>
+                </a>
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="social-item">
+                    <i class="footer__icon fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="footer__copyright">
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp" class="footer__copyright-link">w3.css</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenuBtn = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenuBtn.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed)
+            {
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+
+        }
+
+        // Lấy tất cả các thẻ có class là navbar-item__link và có thuộc tính href chứa #
+        var menuItems = document.querySelectorAll('.navbar__list li a[href*="#"]');
+        console.log(menuItems);
+
+        for(var i = 0; i < menuItems.length; i++)
+        {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event){
+                // Nếu có chứa anh chị em liền kề và anh chị em liền kề có chứa class navbar__submenu
+                var isMenuParent = this.nextElementSibling && this.nextElementSibling.classList.contains('navbar__submenu');
+                if(isMenuParent)
+                {
+                    event.preventDefault();
+                }
+                else{
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

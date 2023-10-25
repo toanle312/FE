@@ -1,0 +1,19 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "HTML CSS từ cơ bản đến nâng cao",
+      "description": "Kiến thức HTML và CSS cho người mới bắt đầu"
+    },
+    {
+      "id": 2,
+      "name": "JavaScript cơ bản",
+      "description": "Ngôn ngữ lập trình Web phổ biến"
+    },
+    {
+      "description": "NodeJS là một Framework của JS hỗ trợ cho Back-End Dev",
+      "id": 3,
+      "name": "NodeJS"
+    }
+  ]
+}

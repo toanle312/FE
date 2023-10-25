@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="register-form">
+            <h3 class="heading">Thành viên đăng ký</h3>
+            <p class="desc">Cố gắng và nỗ lực đến cùng nào ❤️</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input type="text" class="form-control" name="fullname" rules="required" id="fullname" placeholder="VD: Toàn Lê">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" name="email" rules="required|email" id="email" placeholder="VD: email@domain.com">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" name="password" rules="required|password" id="password" placeholder="Nhập mật khẩu">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password-confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input type="password" class="form-control" name="password-confirmation" rules="required|confirmed:#password" id="password-confirmation" placeholder="Nhập lại mật khẩu">
+                <span class="form-message"></span>
+            </div>
+
+            <!-- <div class="form-group">
+                <label class="form-label">Giới tính</label>
+                <div class="gender-group">
+                    <div>
+                        <input type="checkbox" value="Nam" name="gender" class="form-control">
+                        Nam
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Nữ" name="gender" class="form-control">
+                        Nữ
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Khác" name="gender" class="form-control">
+                        Khác
+                    </div>
+                </div>
+                
+                <span class="form-message"></span>
+            </div> -->
+
+            <button type="submit" class="form-submit">Đăng ký</button> 
+
+        </form>
+
+        
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        var form = new Validator('#register-form');
+        form.onsubmit = function(dataForm){
+            console.log(dataForm);
+        }
+    </script>
+</body>
+</html>

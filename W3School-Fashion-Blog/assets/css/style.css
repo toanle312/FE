@@ -1,0 +1,537 @@
+/* Header */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+    line-height: 1.5;
+}
+
+body{
+    background-color: #f1f1f1;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Common */
+img{
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 10px 0;
+    font-family: 'Oswald';
+}
+
+p{
+    margin: 15px 0;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.padding-top-bottom{
+    padding-top: 8px!important;
+    padding-bottom: 8px!important;
+}
+
+.margin-bottom{
+    margin-bottom: 16px!important;
+}
+
+.white-background{
+    background-color: #fff!important;
+}
+
+.white-color{
+    color:#fff;
+}
+
+.black-color{
+    color:#000;
+}
+
+.sepia{
+    filter: sepia(75%);
+}
+
+.move-to-left{
+    text-align: left;
+}
+
+.text-large{
+    font-size: 48px;
+}
+
+.text-bold{
+    font-family: inherit;
+    font-weight: bolder;
+}
+
+.text-tag{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+}
+
+.text-tag-white{
+    background-color: #fff;
+    color: #000;
+    padding: 0 8px;
+    margin-left: 8px;
+}
+
+.text-gray{
+    opacity: 0.6;
+}
+
+.subcribe-btn{
+    border-radius: 0;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+}
+
+.opacity{
+    opacity: 0.6;
+}
+
+.subcribe-btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.show{
+    display: block!important;
+}
+
+/* Khi toàn bộ thẻ con trong một thẻ cha đều có thuộc tính float 
+thì thẻ cha không thể ôm trọn ôm trọn được tất cả thẻ con (thẻ con sẽ tự chui ra khỏi thẻ cha) 
+có thể khắc phục bằng thuộc tính overflow: hidden trong thẻ cha hoặc làm theo cách bên dưới đây */
+.clear{
+    clear: both;
+}
+
+/* main */
+
+/* Header */
+.nav {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.nav__item{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    float: left;
+}
+
+.nav__item:hover{
+    background-color: #ccc;
+}
+
+.nav__item:hover i{
+    color: #000;
+}
+
+.nav__item > i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav__item--right{
+    float: right;
+}
+
+/* Container */
+.welcome-container{
+    text-align: center;
+    padding: 48px 16px;
+    background-color: #fff;
+}
+
+.welcome-container__title{
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.welcome-container__description{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.display-container{
+    position: relative;
+}
+
+.container__img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.display-description{
+    padding: 12px 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.display-description__title, .display-description__blog{
+    color: #fff;
+}
+
+.display-description__title{
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 36px;
+}
+
+.display-description__blog{
+    letter-spacing: 3px;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.content{
+    padding: 8px 16px;
+}
+
+.content__title{
+    text-align: center;
+    margin: 16px;
+    padding: 12px 24px;
+    background-color: #fff;
+}
+
+.content__title-heading{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content__title-description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content__title-img{
+    padding: 16px 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.content__title-paragraph{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.content__title-wrap{
+    margin: 15px 0;
+}
+
+
+.content__title-liked:hover, .content__title-reply:hover{
+    cursor: pointer;
+}
+
+.content__title-liked{
+    width: 92px;
+    float: left;
+    font-size: 17px;
+    color: #000;
+    border: solid 1px #ccc;
+    padding: 8px 16px;
+    margin: 15px 0;
+    background-color: #fff;
+}
+
+.content__title-liked > i {
+    margin-right: 8px;
+}
+
+.content__title-reply{
+    float: right;
+    font-size: 17px;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    margin: 15px 0;
+}
+
+.content__title-reply:hover, .content__title-liked:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.content__replies-show{
+    display: none   ;
+    margin-bottom: 16px;
+}
+
+.content__replies-img{
+    width: 90px;
+    vertical-align: middle;
+    float: left;
+}
+
+.content__replies-name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content__replies-date{
+    font-size: 15px;
+}
+
+.content__replies-comment{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.content__notices{
+    margin: 16px;
+}
+
+.content__notices-img{
+    width: 100%;
+    filter: grayscale(75%);
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.content__label{
+    font-family: 'Oswald', sans-serif;
+    padding: 0.15px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+.content__label > h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content__label > p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.content__list{
+    list-style: none;
+    padding: 0;
+}
+
+.content__list-item{
+    background-color: #fff;
+    padding: 16px;
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+}
+
+.content__list-item:last-child{
+    border-bottom: none;
+}
+
+.content__list-img{
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-right: 16px;
+}
+
+.content__list-item-name{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.content__list-item-descript{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.content__label-ad{
+    display: flex;
+    height: 200px;
+    margin: 16px 0;
+    background-color: #f1f1f1;
+}
+
+.content__label-ad-text{
+    color: #000;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.content__label-img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.content__notices > .row{
+    padding-top: 15px;
+}
+
+.content__label-tag{
+    margin: 16px 0;
+}
+
+.content__label-tag > span{
+    margin: 0 0 16px;
+}
+
+.content__label-tag-first{
+    font-size: 16px;
+    font-family: sans-serif;  
+}
+
+.content__label-tag-element{
+    font-size: 13px;
+    font-family: sans-serif;  
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.content__label-contact > i{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    margin-right: 2px;
+}
+
+.content__label-contact > i:hover{
+    opacity: 0.6;
+}
+
+.content__label-input{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border: solid 1px #ccc;
+}
+
+.content__label-button{
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.content__label-button:hover{
+    color: #000;
+}
+
+/* Footer */
+.footer{
+    background-color: #616161;
+    padding: 32px;
+    font-family: sans-serif;
+}
+
+.footer > a{
+    text-decoration: none;
+    font-family:inherit;
+    font-size: 15px;
+    background-color: #000;
+    padding: 12px 24px;
+    color: #fff;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.footer > a > i{
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+
+.footer > a:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.footer > p{
+    font-family:inherit;
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer > p > a{
+    font-family:inherit;
+    font-size: 15px;
+    color: #fff;
+}
+
+@keyframes opa {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    animation: opa ease-in 0.4s;
+}
+
+.subcribe-modal{
+    width: 900px;
+    padding: 32px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    transform:  translateY(50%);
+}
+
+.subcribe-modal > .content__label > h2 {
+    color:#000;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.subcribe-modal > .content__label > i {
+    color:#000;
+    font-size: 30px;
+    display: block;
+    padding: 4px 8px 2px;
+    float: right;
+}
+
+.subcribe-modal > .content__label > i:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+.subcribe-modal > .content__label > button{
+    padding: 12px 24px;
+}
